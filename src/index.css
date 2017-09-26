@@ -2,8 +2,130 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+
 }
 
-.navbar {
+.nav-bar {
   background: white;
+  border:white;
+  display: flex;
+  align-items: center;
+
 }
+
+.nav-div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.home-btn {
+  border-radius: 0px;
+  color: white;
+  border: 1px solid #FFDC00;
+  background: #FDC000;
+  transition: background 0.5s ease-in;
+}
+
+.home-btn:hover {
+  color: #FFDC00;
+  background: white;
+  border: 1px solid #FFDC00;
+  
+}
+
+.about-btn {
+  border-radius: 0px;
+  color: white;
+  border: 1px solid #2ECC40;
+  background: #2ECC40;
+  transition: background 0.5s ease-in;
+  display: flex;
+  align-items: center;
+}
+
+.about-btn:hover {
+  color: #2ECC40;
+  background: white;
+  border: 1px solid #2ECC40;
+
+}
+
+.projects-btn {
+  border-radius: 0px;
+  color: white;
+  border: 1px solid #0074D9;
+  background: #0074D9;
+  transition: background 0.5s ease-in;
+  display: flex;
+  align-items: center;
+}
+
+.projects-btn:hover {
+  color: #0074D9;
+  background: white;
+  border: 1px solid #0074D9;
+}
+
+.contact-btn {
+  border-radius: 0px;
+  color: white;
+  border: 1px solid #FF4136;
+  background: #FF4136;
+  transition: background 0.5s ease-in;
+  display: flex;
+  align-items: center;
+}
+
+.contact-btn:hover {
+  color: #FF4136;
+  background: white;
+  border: 1px solid #FF4136;
+}
+
+.my {
+  color:#2ECC40;
+}
+
+.custom-btn {
+  margin-bottom: -5px;
+  margin-top: -5px;
+  border-radius: 0;
+  font-family: 'Work Sans', sans-serif ;
+}
+
+.description-layer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(32, 32, 32, 0.8);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+/* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+
+
+.img-wrap:hover .description-layer {
+  visibility: visible;
+  opacity: 1;
+}
+
+.description {
+  transition: .2s;
+  transform: translateY(1em);
+  font-size: 20px;
+
+}
+
+.img-wrap:hover .description {
+  transform: translateY(0);
+}
+

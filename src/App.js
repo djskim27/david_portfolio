@@ -1,33 +1,29 @@
 import React, { Component, PropTypes } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {FaAdjust, FaFacebookSquare} from 'react-icons/lib/fa'
-import {Button, Navbar, Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap';
+import Homepage from './components/Homepage';
+import GlobalNavbar from './components/Navbar';
+import About from './components/About';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import styled from 'styled-components';
+import Footer from './components/Footer'
+import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
+      <Router>
       <div>
-        <Navbar inverse collapseOnSelect className='navbar'>
-    <Navbar.Header>
-      <Navbar.Brand>
-        <a href="#">React-Bootstrap</a>
-      </Navbar.Brand>
-      <Navbar.Toggle />
-    </Navbar.Header>
-    <Navbar.Collapse>
-      <Nav>
-       
-      </Nav>
-      <Nav pullRight>
-        <NavItem eventKey={1} href="#">Link Right</NavItem>
-        <NavItem eventKey={2} href="#">Link Right</NavItem>
-      </Nav>
-    </Navbar.Collapse>
-  </Navbar>
-
-  
+        <GlobalNavbar />
+        <Footer />
+        <Route exact path = '/' component={Homepage}/>
+        <Route exact path = '/about' component={About}/>
+        <Route exact path = '/projects' component={Projects}/>
+        <Route exact path = '/contact' component={Contact}/>
+      
       </div>
+      </Router>
     );
   }
 }
