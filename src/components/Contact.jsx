@@ -12,6 +12,9 @@ const ContactContainer = styled.div`
     h1 {
         color: white;
         font-family: 'Work Sans', sans-serif;
+        @media (max-width:414px) {
+            font-size: 25px;
+        }
     }
     img {
         width: 300px;

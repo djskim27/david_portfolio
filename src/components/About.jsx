@@ -15,6 +15,9 @@ const AboutContainer = styled.div`
         font-size: 18px;
         font-family: 'Work Sans', sans-serif;
         color: white;
+        @media (max-width:414px) {
+            font-size: 13px;
+        }
         @media (min-height: 900px) {
             font-size: 25px;
         }
@@ -24,6 +27,9 @@ const AboutContainer = styled.div`
         font-size: 18px;
         font-family: 'Work Sans', sans-serif;
         color: white;
+        @media (max-width:414px) {
+            font-size: 15px;
+        }
     }
 
     background: url(https://i.imgur.com/SsldRMK.png) no-repeat center center fixed;
@@ -68,6 +74,10 @@ const Description = styled.div`
         font-family: 'PT Sans', sans-serif;
         color: white;
         background: rgba(0,0,0,0.5);
+        @media (max-width:414px) {
+            width: 70%;
+            font-size: 10px;
+        }
         @media (min-height: 900px) {
             font-size: 20px;
         }
@@ -84,6 +94,9 @@ const Skills = styled.div`
     h1 {
         font-family: 'Work Sans', sans-serif;
         color: white;
+        @media (max-width:414px) {
+            font-size: 30px;
+        }
         @media (min-height: 900px) {
             font-size: 70px;
         }
@@ -99,6 +112,11 @@ const SkillsButtonsRowOne = styled.div`
         background: #2ECC40;
         color: white;
         font-family: 'Work Sans', sans-serif;
+        @media (max-width:414px) {
+            font-size: 10px;
+            margin: 2px;
+            padding: 2px;
+        }
         @media (min-height: 900px) {
             margin: 10px;
             padding: 10px;
@@ -118,6 +136,11 @@ const SkillsButtonsRowTwo = styled.div`
         background: #2ECC40;
         color: white;
         font-family: 'Work Sans', sans-serif;
+        @media (max-width:414px) {
+            font-size: 10px;
+            margin: 2px;
+            padding: 2px;
+        }
         @media (min-height: 900px) {
             margin: 10px;
             padding: 10px;

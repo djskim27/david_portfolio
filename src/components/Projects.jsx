@@ -18,6 +18,10 @@ const ProjectContainer = styled.div`
         margin-top: 5%;
         color: white;
         font-family: 'Work Sans', sans-serif;
+        @media (max-width:414px) {
+            margin-top: 15%;
+        }
+
     }
 
     h3 {
@@ -25,6 +29,10 @@ const ProjectContainer = styled.div`
         font-family: 'Work Sans', sans-serif;
         color: white;
         padding-bottom: 5%;
+        @media (max-width:414px) {
+            font-size: 15px;
+            padding-bottom: 15%;
+        }
     }
 
 `
@@ -42,13 +50,24 @@ const Image = styled.div`
     position: relative;
     width: 400px;
     height: 240px;
+    
+    @media (max-width:414px) {
+        width:260px;
+        height: 156px;
+    }
+
     @media (min-height: 900px) {
         width: 520px;
         height: 312px;
     }
     img {
+        border-top: 2px white solid;
         width: 400px;
         height: 240px;
+        @media (max-width:414px) {
+            width:260px;
+            height: 156px;
+        }
         @media (min-height: 900px) {
             width: 520px;
             height: 312px;
