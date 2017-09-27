@@ -48,8 +48,8 @@ const Image = styled.div`
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 400px;
-    height: 240px;
+    width: 420px;
+    height: 252px;
     
     @media (max-width:414px) {
         width:260px;
@@ -62,8 +62,8 @@ const Image = styled.div`
     }
     img {
         
-        width: 400px;
-        height: 240px;
+        width: 420px;
+        height: 252px;
         @media (max-width:414px) {
             border-top: 2px white solid;
             width:260px;
