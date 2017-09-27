@@ -1,14 +1,31 @@
 import React, { Component } from 'react'
 import styled from 'styled-components';
+import FaArrowRight from 'react-icons/lib/fa/arrow-right';
+import {Link} from 'react-router-dom';
 
 const ProjectContainer = styled.div`
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 100%;
     background: #0074D9 no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+    h1 {
+        margin-top: 5%;
+        color: white;
+        font-family: 'Work Sans', sans-serif;
+    }
+
+    h3 {
+        font-size: 18px;
+        font-family: 'Work Sans', sans-serif;
+        color: white;
+        padding-bottom: 5%;
+    }
 
 `
 const ImageContainer = styled.div`
@@ -16,8 +33,7 @@ const ImageContainer = styled.div`
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    
 
 `
 const Image = styled.div`
@@ -26,9 +42,17 @@ const Image = styled.div`
     position: relative;
     width: 400px;
     height: 240px;
+    @media (min-height: 900px) {
+        width: 520px;
+        height: 312px;
+    }
     img {
         width: 400px;
         height: 240px;
+        @media (min-height: 900px) {
+            width: 520px;
+            height: 312px;
+        }
     }
     
 `
@@ -90,6 +114,7 @@ export default class Projects extends Component {
                     <img src={project.img}/>
                     <a href={project.url} target='blank' className='description-link'> <div className='description-layer'>
                         <p className='description'><strong>{project.title}</strong></p>
+                        
 
                         
 
@@ -99,9 +124,11 @@ export default class Projects extends Component {
       })
     return (
       <ProjectContainer>
+        <h1><strong>My Projects</strong></h1>
         <ImageContainer>
         {projects}
         </ImageContainer>
+        <h3>Like what you see? Contact Me! <Link to='/contact'><button className='contact-me-btn contact-bounce-to-right'><FaArrowRight size={25}/></button></Link></h3>
         
       </ProjectContainer>
     )

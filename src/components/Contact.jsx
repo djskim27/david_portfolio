@@ -46,9 +46,9 @@ export default class Contact extends Component {
           <br/>
           <img src='https://media.giphy.com/media/264uHA6t7lhJK/giphy.gif'/>
           <LogoContainer>
-            <LinkedIn><a href='https://www.linkedin.com/in/djskim27/' target='blank'><FaLinkedinSquare size={48} color={"white"}/></a></LinkedIn>
-            <Email><a href='mailto:djskim27@gmail.com' ><MdEmail size={60} color={"white"}/></a></Email>
-            <Github><a href='https://github.com/djskim27' target='blank'><FaGithubSquare size={48} color={"white"}/></a></Github>
+            <LinkedIn><a href='https://www.linkedin.com/in/djskim27/' target='blank'><FaLinkedinSquare className='hvr-shrink'size={48} color={"white"}/></a></LinkedIn>
+            <Email><a href='mailto:djskim27@gmail.com' ><MdEmail className='hvr-shrink' size={60} color={"white"}/></a></Email>
+            <Github><a href='https://github.com/djskim27' target='blank'><FaGithubSquare className='hvr-shrink' size={48} color={"white"}/></a></Github>
           </LogoContainer >
           <h1><strong>Thanks for visiting!</strong></h1>
 

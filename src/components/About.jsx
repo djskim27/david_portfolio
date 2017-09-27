@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import FaArrowRight from 'react-icons/lib/fa/arrow-right';
+import {Link} from 'react-router-dom';
+
 
 const AboutContainer = styled.div`
     display: flex;
@@ -9,6 +12,15 @@ const AboutContainer = styled.div`
     margin-bottom: 50px;
 
     p{
+        font-size: 18px;
+        font-family: 'Work Sans', sans-serif;
+        color: white;
+        @media (min-height: 900px) {
+            font-size: 25px;
+        }
+    }
+
+    h3{
         font-size: 18px;
         font-family: 'Work Sans', sans-serif;
         color: white;
@@ -55,7 +67,10 @@ const Description = styled.div`
         font-size: 15px;
         font-family: 'PT Sans', sans-serif;
         color: white;
-        background: rgba(0,0,0,0.5)
+        background: rgba(0,0,0,0.5);
+        @media (min-height: 900px) {
+            font-size: 20px;
+        }
     }
     
 `
@@ -69,6 +84,9 @@ const Skills = styled.div`
     h1 {
         font-family: 'Work Sans', sans-serif;
         color: white;
+        @media (min-height: 900px) {
+            font-size: 70px;
+        }
     }
 `
 const SkillsButtonsRowOne = styled.div`
@@ -81,6 +99,12 @@ const SkillsButtonsRowOne = styled.div`
         background: #2ECC40;
         color: white;
         font-family: 'Work Sans', sans-serif;
+        @media (min-height: 900px) {
+            margin: 10px;
+            padding: 10px;
+            font-size: 15px;
+        }
+    
 
     }
 `
@@ -94,6 +118,11 @@ const SkillsButtonsRowTwo = styled.div`
         background: #2ECC40;
         color: white;
         font-family: 'Work Sans', sans-serif;
+        @media (min-height: 900px) {
+            margin: 10px;
+            padding: 10px;
+            font-size: 15px;
+        }
 
     }
 `
@@ -134,7 +163,7 @@ export default class About extends Component {
                 </SkillsButtonsRowTwo>
             </Skills>
             <br/>
-            <p>Like what you see?</p>
+            <h3>Intrigued? Check my projects out! <Link to='/projects'><button className='here-btn hvr-bounce-to-right'><FaArrowRight size={25}/></button></Link></h3>
             <br/>
             <br/>
             <br/>

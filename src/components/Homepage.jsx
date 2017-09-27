@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import FaArrowRight from 'react-icons/lib/fa/arrow-right';
+import {Link} from 'react-router-dom';
 
 const NameContainer = styled.div`
     display: flex;
@@ -45,6 +47,15 @@ const TagLine = styled.div`
     }
 `
 
+const Question = styled.div`
+   p {
+       font-size: 1.8vw;
+       color: white;
+       margin-right: 56vw;
+
+   }
+`
+
 export default class Homepage extends Component {
   render() {
     return (
@@ -58,6 +69,11 @@ export default class Homepage extends Component {
         <TagLine>
             <p>Mastering the coding game, one line at a time.</p>
         </TagLine>
+        <br/>
+        <br/>
+        <Question>
+            <p>Come learn about me <Link to='/about'><button className='about-me-btn about-bounce-to-right'><FaArrowRight size={30}/></button></Link></p>
+        </Question>
 
       </NameContainer>
     )
