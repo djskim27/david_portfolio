@@ -51,7 +51,7 @@ const Question = styled.div`
    p {
        font-size: 1.8vw;
        color: white;
-       margin-right: 56vw;
+       margin-right: 55vw;
 
    }
 `
@@ -72,7 +72,7 @@ export default class Homepage extends Component {
         <br/>
         <br/>
         <Question>
-            <p>Come learn about me <Link to='/about'><button className='about-me-btn about-bounce-to-right'><FaArrowRight size={30}/></button></Link></p>
+            <Link to='/about'><button className='about-me-btn about-bounce-to-right'>Learn More</button></Link>
         </Question>
 
       </NameContainer>
