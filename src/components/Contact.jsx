@@ -5,7 +5,7 @@ import MdEmail from 'react-icons/lib/md/email';
 import FaGithubSquare from 'react-icons/lib/fa/github-square';
 
 const ContactContainer = styled.div`
-    padding-top: 10%;
+    padding-top: 5%;
     height: 100vh;
     background: #FF4136;
     text-align: center;
