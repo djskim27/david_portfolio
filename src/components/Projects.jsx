@@ -24,11 +24,11 @@ const Image = styled.div`
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 333px;
-    height: 200px;
+    width: 400px;
+    height: 240px;
     img {
-        width: 333px;
-        height: 200px;
+        width: 400px;
+        height: 240px;
     }
     
 `

@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import FaLinkedinSquare from 'react-icons/lib/fa/linkedin-square';
 import MdEmail from 'react-icons/lib/md/email';
+import FaGithubSquare from 'react-icons/lib/fa/github-square';
 
 const ContactContainer = styled.div`
-    padding-top: 5%;
+    padding-top: 10%;
     height: 100vh;
     background: #FF4136;
     text-align: center;
@@ -30,6 +31,11 @@ const LinkedIn = styled.div`
 const Email = styled.div`
     margin-top: 10px;
     padding-left: 10px;
+    padding-right: 10px;
+`
+const Github = styled.div`
+    margin-top: 16px;
+    padding-left: 10px;
 `
 
 export default class Contact extends Component {
@@ -40,9 +46,11 @@ export default class Contact extends Component {
           <br/>
           <img src='https://media.giphy.com/media/264uHA6t7lhJK/giphy.gif'/>
           <LogoContainer>
-            <LinkedIn><a href='https://www.linkedin.com/in/djskim27/' target='blank'><FaLinkedinSquare className='linked-in' size={48} color={"white"}/></a></LinkedIn>
-            <Email><a href='mailto:djskim27@gmail.com' ><MdEmail className='email 'size={60} color={"white"}/></a></Email>
-          </LogoContainer>
+            <LinkedIn><a href='https://www.linkedin.com/in/djskim27/' target='blank'><FaLinkedinSquare size={48} color={"white"}/></a></LinkedIn>
+            <Email><a href='mailto:djskim27@gmail.com' ><MdEmail size={60} color={"white"}/></a></Email>
+            <Github><a href='https://github.com/djskim27' target='blank'><FaGithubSquare size={48} color={"white"}/></a></Github>
+          </LogoContainer >
+          <h1><strong>Thanks for visiting!</strong></h1>
 
           
 

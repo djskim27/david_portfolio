@@ -133,6 +133,11 @@ export default class About extends Component {
                     <div>PostgreSQL</div>
                 </SkillsButtonsRowTwo>
             </Skills>
+            <br/>
+            <p>Like what you see?</p>
+            <br/>
+            <br/>
+            <br/>
           </Description>
 
       
