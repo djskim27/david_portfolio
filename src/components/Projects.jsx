@@ -61,10 +61,11 @@ const Image = styled.div`
         height: 312px;
     }
     img {
-        border-top: 2px white solid;
+        
         width: 400px;
         height: 240px;
         @media (max-width:414px) {
+            border-top: 2px white solid;
             width:260px;
             height: 156px;
         }
